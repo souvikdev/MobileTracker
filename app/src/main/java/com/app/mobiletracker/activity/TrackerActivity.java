@@ -1,9 +1,11 @@
-package com.app.mobiletracker;
+package com.app.mobiletracker.activity;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
 import android.os.Bundle;
 
-public class TrackerActivity extends AppCompatActivity {
+import com.app.mobiletracker.R;
+
+public class TrackerActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
