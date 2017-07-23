@@ -10,6 +10,8 @@ import com.app.mobiletracker.R;
 
 public class TrackerActivity extends Activity {
 
+    boolean permSwitch = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +21,7 @@ public class TrackerActivity extends Activity {
         toggle.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
+                    permSwitch = true;
                     Toast.makeText(getApplicationContext(),"Switched On",Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(getApplicationContext(),"Switched Off",Toast.LENGTH_SHORT).show();
